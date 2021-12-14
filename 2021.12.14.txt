@@ -1,0 +1,64 @@
+关于Object类的一些事情
+
+基本概念：Object类时java所有类的基类，是整个类继承结构的顶端，也是最抽象的一个类。、
+
+Object类所有方法详解：
+
+1、registerNatives()方法
+    从名字上面理解，这个方法是注册native方法（简单来讲，native方法是java调用非java代码的接口），Object中的native方法，并使用Register Natives()向JVM进行注册
+
+2、getClass()方法
+    这是一个public方法，就是获取这个对象，这是当前类的对象在运行时类的所有信息的集合。是反射三种方式之一。
+	Person a = new Person("张三");
+	System.out.println(a.getclass());
+	System.out.println(a.getclass().getName)
+    运行的结果：
+	class (某个东西).object.Person
+	(某个东西).object.Person
+    getclass方法返回的是class类型的对象，可以通过getName()方法得到该对象的名称
+
+3、hashcode()方法
+    这个方法返回的是当前对象的哈希值hashcode，这个值是一个整型。
+	关于hashcode有以下几点约束：
+    1、在一次程序运行期间，对同一对象多次调用该方法，返回的必须是一个相同的数
+    2、如果两个对象的equals方法返回为true，那么这两个对象的hashcode一定相等，如果返回为false，hashcode可以相等也可以	不等
+    3、默认的哈是从的是将内存地址转化为的hash值，重写了以后就是自定义的hash值计算方法
+
+4、equals()方法
+
+用于比较当前对象与目标对象是否相等，默认是比较引用是不是指向同一个对象。
+我们经常要重写equals方法，因为当我们使用hash方法时，由于不同的对象肯定不是由同一个引用指向，会重复将对象存入map中，这样就破坏了hash方法不能存储相同对象的特性，造成内存溢出
+
+重写equals方法的几条约定
+	1、自反性：即 x.equals(x)返回 true， x不为 null；
+	2、对称性：即 x.equals(y)与 y.equals(x）的结果相同， x与 y不为 null；
+	3、传递性：即 x.equals(y)结果为 true, y.equals(z)结果为 true，则 x.equals(z)结果也必须为 true；
+	4、一致性：即 x.equals(y)返回 true或 false，在未更改 equals方法使用的参数条件下，多次调用返回的结果也必须一致		。 x与 y不为 null。
+
+5、clone()方法
+这个方法返回当前对象的一个副本，这是一个 protected方法，提供给子类重写。但需要实现 Cloneable接口，这是一个标记接口，如果没有实现，当调用 object.clone()方法，会抛出 CloneNotSupportedException。
+
+    	protected 类名 clone() throws CloneNotSupportedException{
+		return (类名) super.clone();
+	}
+
+当拷贝引用类型时，仅仅创建一个新的引用，等于以前的引用，而不是直接复制引用指向的内容，称为“浅拷贝”
+
+6、toString()方法
+这是一个 public方法，子类可重写，建议所有子类都重写 toString方法，默认的 toString方法，只是将当前类的全限定性类名 +@+十六进制的 hashCode值。
+
+我们思考一下为什么需要toString方法？
+
+可以这么理解：返回当前对象的字符串表示，可以将其打印方便查看对象的信息，方便记录日志信息提供调试。我们可以选择需要表示的重要信息重写到 toString方法中。
+
+7、wait()方法/ wait(long)/ wait(long,int)
+这三个方法是用来线程间通信用的，作用是阻塞当前线程，等待其他线程调用 notify()/notifyAll()方法将其唤醒。这些方法都是 publicfinal的，不可被重写。
+
+8、notify()方法/notifyAll()方法
+
+public final native void notify(); 	随机唤醒之前在当前对象上调用wait方法的一个线程
+public final native void notifyAll();	唤醒之前所有在当前对象上调用wait方法的一个线程
+
+9、finallize()方法
+
+这个方法是垃圾回收机制自己执行的，自己不要轻易调用。
