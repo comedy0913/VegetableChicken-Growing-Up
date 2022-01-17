@@ -2,6 +2,7 @@
 #include <queue>
 #include <vector>
 #include <algorithm>
+
 using namespace std;
 
 struct Pcb{
@@ -40,7 +41,12 @@ struct PcbSort3
 {
 	bool operator() (const Pcb& a, const Pcb& b)
 	{
-		return a.prio > b.prio;	// Ð¡¶¥¶Ñ
+		if(a.prio!= b.prio)
+			return a.prio > b.prio;	// Ð¡¶¥¶Ñ
+		else
+		{
+			return a.arriveTime > b.arriveTime;
+		}
 	}
 };
 

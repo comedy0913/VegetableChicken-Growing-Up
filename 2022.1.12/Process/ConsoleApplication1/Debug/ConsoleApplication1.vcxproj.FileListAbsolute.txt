@@ -1,2 +1,4 @@
 C:\Users\75509\Desktop\Process\ConsoleApplication1\Debug\ConsoleApplication1.exe
 C:\Users\75509\Desktop\Process\ConsoleApplication1\Debug\ConsoleApplication1.pdb
+E:\VegetableChicken-Growing-Up\2022.1.12\Process\ConsoleApplication1\Debug\ConsoleApplication1.exe
+E:\VegetableChicken-Growing-Up\2022.1.12\Process\ConsoleApplication1\Debug\ConsoleApplication1.pdb

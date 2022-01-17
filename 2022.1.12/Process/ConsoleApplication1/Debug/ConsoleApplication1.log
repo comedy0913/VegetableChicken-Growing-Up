@@ -1,8 +1,8 @@
 ﻿  源.cpp
-C:\Users\75509\Desktop\Process\ConsoleApplication1\源.cpp(50,20): warning C4018: “<”: 有符号/无符号不匹配
-C:\Users\75509\Desktop\Process\ConsoleApplication1\源.cpp(74,20): warning C4018: “<”: 有符号/无符号不匹配
-C:\Users\75509\Desktop\Process\ConsoleApplication1\源.cpp(102,22): warning C4018: “<”: 有符号/无符号不匹配
-C:\Users\75509\Desktop\Process\ConsoleApplication1\源.cpp(138,20): warning C4018: “<”: 有符号/无符号不匹配
-C:\Users\75509\Desktop\Process\ConsoleApplication1\源.cpp(166,22): warning C4018: “<”: 有符号/无符号不匹配
-C:\Users\75509\Desktop\Process\ConsoleApplication1\源.cpp(201,20): warning C4018: “<”: 有符号/无符号不匹配
-  ConsoleApplication1.vcxproj -> C:\Users\75509\Desktop\Process\ConsoleApplication1\Debug\ConsoleApplication1.exe
+E:\VegetableChicken-Growing-Up\2022.1.12\Process\ConsoleApplication1\源.cpp(56,20): warning C4018: “<”: 有符号/无符号不匹配
+E:\VegetableChicken-Growing-Up\2022.1.12\Process\ConsoleApplication1\源.cpp(80,20): warning C4018: “<”: 有符号/无符号不匹配
+E:\VegetableChicken-Growing-Up\2022.1.12\Process\ConsoleApplication1\源.cpp(108,22): warning C4018: “<”: 有符号/无符号不匹配
+E:\VegetableChicken-Growing-Up\2022.1.12\Process\ConsoleApplication1\源.cpp(144,20): warning C4018: “<”: 有符号/无符号不匹配
+E:\VegetableChicken-Growing-Up\2022.1.12\Process\ConsoleApplication1\源.cpp(172,22): warning C4018: “<”: 有符号/无符号不匹配
+E:\VegetableChicken-Growing-Up\2022.1.12\Process\ConsoleApplication1\源.cpp(207,20): warning C4018: “<”: 有符号/无符号不匹配
+  ConsoleApplication1.vcxproj -> E:\VegetableChicken-Growing-Up\2022.1.12\Process\ConsoleApplication1\Debug\ConsoleApplication1.exe
