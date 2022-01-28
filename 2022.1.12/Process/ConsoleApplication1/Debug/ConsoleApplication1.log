@@ -1,8 +1,2 @@
-﻿  源.cpp
-E:\VegetableChicken-Growing-Up\2022.1.12\Process\ConsoleApplication1\源.cpp(56,20): warning C4018: “<”: 有符号/无符号不匹配
-E:\VegetableChicken-Growing-Up\2022.1.12\Process\ConsoleApplication1\源.cpp(80,20): warning C4018: “<”: 有符号/无符号不匹配
-E:\VegetableChicken-Growing-Up\2022.1.12\Process\ConsoleApplication1\源.cpp(108,22): warning C4018: “<”: 有符号/无符号不匹配
-E:\VegetableChicken-Growing-Up\2022.1.12\Process\ConsoleApplication1\源.cpp(144,20): warning C4018: “<”: 有符号/无符号不匹配
-E:\VegetableChicken-Growing-Up\2022.1.12\Process\ConsoleApplication1\源.cpp(172,22): warning C4018: “<”: 有符号/无符号不匹配
-E:\VegetableChicken-Growing-Up\2022.1.12\Process\ConsoleApplication1\源.cpp(207,20): warning C4018: “<”: 有符号/无符号不匹配
+﻿  源1.c
   ConsoleApplication1.vcxproj -> E:\VegetableChicken-Growing-Up\2022.1.12\Process\ConsoleApplication1\Debug\ConsoleApplication1.exe
